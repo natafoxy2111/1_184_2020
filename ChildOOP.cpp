@@ -15,7 +15,7 @@ class Child
 private:
 	int Age;
 	string Name;
-	double Want; // Переменная, которая в будущем будет использоваться для проверки условий из Display
+	double WhatChildWant; // Переменная, которая в будущем будет использоваться для проверки условий из Display
 public:
 	Child()
 	{
@@ -37,26 +37,26 @@ public:
 	void Compare()
 	{
 		cout << "What your child wants: Eat, Game or Sleep? " << endl;
-		cin >> Want;
-		if (Age < 6)
+		cin >> WhatChildWant;
+		if (Age < 6) // Если Ребенку меньше 6 лет, то мы будем выполнять одни действия
 		{
-			if (Want == 1)
+			if (WhatChildWant == 1)
 			{
 				cout << Name << " wants eat, prepare a meal and ask the child what HE/SHE want. " << endl;
 			}
-			else if (Want == 2)
+			else if (WhatChildWant == 2)
 			{
 				cout << "plays with " << Name << " or turn on cartoons." << endl;
 			}
-			else if (Want == 3)
+			else if (WhatChildWant == 3)
 			{
 				cout << Name << " want sleeps, air out the room and read a story. " << endl;
 			}
-			else if (Want == 1.2)
+			else if (WhatChildWant == 1.2)
 			{
 				cout << Name << " wants eat and plays. Prepare food, you can arrange an interactive game with cooking" << endl;
 			}
-			else if (Want == 1.3)
+			else if (WhatChildWant == 1.3)
 			{
 				cout << Name << " wants eat and sleeps. Urgently prepare a light meal, put the child to bed, read the story" << endl;
 			}
@@ -65,25 +65,25 @@ public:
 				cout << "What " << Name << " wants?" << endl;
 			}
 		}
-		else
+		else // Если ребенку больше 6, то мы выполняем действия, связанные с его самостоятельностью
 		{
-			if (Want == 1)
+			if (WhatChildWant == 1)
 			{
 				cout << Name << " want eats, try cooking with " << Name << ", if it works, it's cool! " << endl;
 			}
-			else if (Want == 2)
+			else if (WhatChildWant == 2)
 			{
 				cout << "play with " << Name << " or turn on cartoons." << endl;
 			}
-			else if (Want == 3)
+			else if (WhatChildWant == 3)
 			{
 				cout << Name << " want sleeps, ventilate the room. Ask if " << Name << " wants a story, and if not, wish him sweet dreams.  " << endl;
 			}
-			else if (Want == 1.2)
+			else if (WhatChildWant == 1.2)
 			{
 				cout << Name << " wants eat and plays. Prepare food, you can arrange an interactive game with cooking" << endl;
 			}
-			else if (Want == 1.3)
+			else if (WhatChildWant == 1.3)
 			{
 				cout << Name << " wants eats and sleeps. Urgently prepare a light meal, put the child to bed, read the story" << endl;
 			}
